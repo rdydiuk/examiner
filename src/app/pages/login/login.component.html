@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col main-col">
+      <div class="wrapper">
+        <div class="formContent">
+          <div class="logo-area">
+            <img src="/assets/logo5.png" class="icon" alt="Examiner" />
+          </div>
+          <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+            <input type="text" name="student-id" placeholder="Student ID">
+            <input type="text" name="password" placeholder="Password">
+            <input type="submit" class="fourth" value="Log In">
+          </form>
+          <div class="formFooter">
+            <a class="underlineHover" href="#">Forgot Password?</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

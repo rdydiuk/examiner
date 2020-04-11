@@ -1,0 +1,136 @@
+.dashboard-container {
+  height: 100%;
+
+  .row-header {
+    background-color: #fff;
+    height: 70px;
+    border-bottom: 1px solid #cacacb;
+
+    .brand {
+      margin-top: 7px;
+
+      img {
+        width: 170px;
+      }
+    }
+
+    .breadcrumbs {
+      margin: 28px;
+      font-size: 14px;
+      color: #043345;
+
+      .breadcrumb-delimiter {
+        // margin-right: 15px;
+      }
+
+      .breadcrumb-item {
+        margin: 0 15px;
+
+        &:last-child {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .row-main {
+    height: 100%;
+
+    .col-left {
+      color: #FFF;
+      height: 100%;
+      background-color: #00b6c7;
+      padding: 0;
+
+      .navbar {
+        padding: 0;
+        margin-top: 30px;
+
+        ul {
+          width: 100%;
+
+          li {
+            padding: 5px 15px;
+          }
+        }
+
+        a {
+          color: #fff;
+        }
+
+        .active {
+          background-color: rgba(2, 162, 177, 0.79);
+        }
+      }
+    }
+
+
+    .col-right {
+      height: 100%;
+      background-color: #FFF;
+
+      .subject-name-col {
+        margin: 10px 0 0 5px;
+        color: #043345;
+      }
+
+      .row-progressbar {
+        .col-progressbar {
+          text-align: center;
+
+          .progressbar-img {
+            width: 98%;
+          }
+        }
+      }
+
+      .exam-steps-row {
+        margin-top: 30px;
+
+        .exam-cam-mic-check {
+          .webcam-frame {
+            border: 1px solid #043345;
+            width: 75%;
+            margin: 0 auto;
+            margin-top: 30px;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+
+        .exam-start {
+          margin: 80px 0;
+          text-align: center;
+        }
+      }
+
+      .exam-action-row {
+        margin-top: 30px;
+
+        .exam-action-col-next {
+          text-align: right;
+
+          button {
+            width: 110px;
+
+            &.start-exam {
+              width: 140px;
+            }
+          }
+        }
+
+        .exam-action-col-previous {
+          text-align: left;
+
+          button {
+            width: 110px;
+          }
+        }
+      }
+
+    }
+
+  }
+}
