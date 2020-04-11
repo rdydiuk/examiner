@@ -120,8 +120,8 @@
             type="button" class="btn btn-primary btn-lg">Next</button>
           <button *ngIf="currentExamPage == examPages.CamMicCheck" (click)="currentExamPage = examPages.StartExam"
             type="button" class="btn btn-primary btn-lg">Yes</button>
-          <button *ngIf="currentExamPage == examPages.StartExam" type="button"
-            class="btn btn-primary btn-lg start-exam">Start
+          <button *ngIf="currentExamPage == examPages.StartExam" type="button" class="btn btn-primary btn-lg start-exam"
+            routerLink="/examination">Start
             exam</button>
         </div>
       </div>

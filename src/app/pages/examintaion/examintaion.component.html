@@ -1,0 +1,123 @@
+<div class="container-fluid dashboard-container">
+  <div class="row row-header">
+    <div class="col-3">
+      <div class="brand">
+        <img src="/assets/logo5.png" routerLink="/" alt="Examiner" />
+      </div>
+    </div>
+    <div class="col" *ngIf="currentState == examStates.progress">
+      <div class="row menu-items-row">
+        <div class="col menu-item-col">
+          <i class="fa fa-pause fa-2x"></i>
+          <span>Pause the exam</span>
+        </div>
+        <div class="col menu-item-col">
+          <i class="fa fa-hand-paper fa-2x"></i>
+          <span>Raise hand</span>
+
+        </div>
+        <div class="col menu-item-col">
+          <i class="fa fa-sign-out-alt fa-2x"></i>
+          <span>Stop exam</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row row-main" *ngIf="currentState == examStates.progress">
+    <div class="col col-right">
+      <div class="row">
+        <div class="col-9 subject-name-col">
+          <h2>Question 1 of 40</h2>
+        </div>
+        <div class="col camera-col">
+          <img src="/assets/camera-on.png" alt="Examiner" />
+          <!-- <div class="webcam-frame">
+            <img src="/assets/student-webcam.png" alt="">
+          </div> -->
+        </div>
+      </div>
+      <hr />
+      <div class="row text-right">
+        <div class="col countdown-col">
+            2 min : 59 sec 
+        </div>
+      </div>
+      <div class="row question-row">
+        <div class="col question-col">
+          <h3>Which one is not an object oriented programming language?</h3>
+        </div>
+      </div>
+      <div class="row answer-row">
+        <div class="col answer-col">
+          <div class="row first-row">
+            <div class="col-6">
+              <button type="button" class="btn btn-secondary btn-lg"
+                (click)="currentState = examStates.result">JavaScript</button>
+            </div>
+            <div class="col-6">
+              <button type="button" class="btn btn-secondary btn-lg"
+                (click)="currentState = examStates.result">C#</button>
+            </div>
+          </div>
+          <div class="row second-row">
+            <div class="col-6">
+              <button type="button" class="btn btn-secondary btn-lg"
+                (click)="currentState = examStates.result">Java</button>
+            </div>
+            <div class="col-6">
+              <button type="button" class="btn btn-secondary btn-lg"
+                (click)="currentState = examStates.result">Python</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row row-main" *ngIf="currentState == examStates.result">
+    <div class="col col-right">
+      <div class="row">
+        <div class="col subject-name-col text-center">
+          <h1>Exam Complete!</h1>
+        </div>
+      </div>
+      <hr />
+      <div class="row exam-results-icon-row mt-5">
+        <div class="col exam-results-icon-col text-center">
+          <i class="far fa-check-circle fa-5x"></i>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col exam-results-col text-center">
+          <h2>Exam Submitted!</h2>
+        </div>
+      </div>
+      <div class="row mt-3 mx-4">
+        <div class="col exam-results-col text-center">
+          <h4> You have successfully submitted your exam and it is awaiting assessment. </h4>
+        </div>
+      </div>
+      <div class="row row-ok-exam text-center mt-4">
+        <div class="col">
+          <button type="button" class="btn btn-primary btn-lg" routerLink="/">Ok</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>

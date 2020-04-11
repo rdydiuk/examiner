@@ -1,0 +1,147 @@
+.dashboard-container {
+  height: 100%;
+
+  .row-header {
+    background-color: #fff;
+    height: 70px;
+    border-bottom: 1px solid #cacacb;
+
+    .brand {
+      margin-top: 7px;
+
+      img {
+        width: 170px;
+      }
+    }
+
+    .menu-items-row {
+      margin-top: 20px;
+      text-align: center;
+
+      .menu-item-col {
+        color: #5a6268;
+
+        span {
+          position: relative;
+          bottom: 6px;
+          left: 6px;
+          font-size: 16px;
+        }
+
+        &:first-child {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  .row-main {
+    height: 100%;
+
+    .col-left {
+      color: #FFF;
+      height: 100%;
+      background-color: #00b6c7;
+      padding: 0;
+
+      .navbar {
+        padding: 0;
+        margin-top: 30px;
+
+        ul {
+          width: 100%;
+
+          li {
+            padding: 5px 15px;
+          }
+        }
+
+        a {
+          color: #fff;
+        }
+
+        .active {
+          background-color: rgba(2, 162, 177, 0.79);
+        }
+      }
+    }
+
+
+    .col-right {
+      height: 100%;
+      background-color: #FFF;
+
+      .subject-name-col {
+        margin: 17px 0 0 5px;
+        color: #043345;
+      }
+
+      .camera-col {
+        text-align: right;
+        padding-right: 30px;
+
+        img {
+          margin-top: 24px;
+          width: 60%;
+        }
+
+        .webcam-frame {
+          width: 115px;
+          display: inline-block;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      hr {
+        margin-top: 0;
+      }
+
+      .question-row {
+        margin-top: 6%;
+
+        .question-col {
+          text-align: center;
+        }
+      }
+
+      .countdown-col {
+        padding-right: 30px;
+        font-size: 21px;
+      }
+
+      .answer-row {
+        margin-top: 5%;
+
+        .answer-col {
+          text-align: center;
+
+          .first-row,
+          .second-row {
+            margin: 50px 0;
+
+            button {
+              width: 200px;
+            }
+          }
+        }
+      }
+
+      .row-ok-exam {
+        button {
+          width: 150px;
+        }
+      }
+
+      .exam-results-icon-col {
+        i {
+          color: #00ff99;
+        }
+      }
+
+    }
+
+  }
+}
